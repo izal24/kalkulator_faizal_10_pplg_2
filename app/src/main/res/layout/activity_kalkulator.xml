@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Kalkulator">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="149dp"
+        android:layout_height="149dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:src="@drawable/d860a8446181469c437200fb8627d72d" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Kalkulator Aritmatika"
+        android:textSize="40sp" />
+    
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:inputType="number"
+    android:hint="angka 1"
+    android:id="@+id/angka1"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:inputType="number"
+        android:hint="angka 2"
+        android:id="@+id/angka2"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" /> 
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        tools:context=".Kalkulator"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/plus"
+            android:text="+"
+            android:layout_marginLeft="80dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/minus"
+            android:text="-"
+            android:layout_marginLeft="40dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".Kalkulator"
+        android:layout_marginTop="0.1dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:id="@+id/times"
+        android:text="x"
+        android:layout_marginLeft="80dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:id="@+id/divided"
+        android:text=":"
+        android:layout_marginLeft="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>
